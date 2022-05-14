@@ -6,7 +6,10 @@ public class Product {
     private int categoryId;
     private double price;
     private int stock;
-    private int state;
+    private boolean state;
+
+
+    private Category category;
 
     public int getProductId() {
         return productId;
@@ -48,11 +51,20 @@ public class Product {
         this.stock = stock;
     }
 
-    public int getState() {
+    public boolean getState() {
         return state;
     }
 
-    public void setState(int state) {
+    public void setState(boolean state) {
         this.state = state;
     }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
 }

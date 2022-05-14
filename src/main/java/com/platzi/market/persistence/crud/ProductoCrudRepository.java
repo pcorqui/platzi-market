@@ -6,6 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 import java.util.Optional;
 
+//este basicamente es el ORM
 //aqui donde se hace las consultas a bd
 public interface ProductoCrudRepository extends CrudRepository<Producto, Integer> {
     List<Producto> findByIdCategoriaOrderByNombreAsc(int idCategoria);

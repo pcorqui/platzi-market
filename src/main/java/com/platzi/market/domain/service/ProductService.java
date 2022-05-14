@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+//el servicio de dominio actua como intermediario entre nuestro controlador de nuestra api y nuestro repository
 @Service //se puede utilizar @Component pero Service agrega una diferenciacion semantica de que esta clase es un servicio
 public class ProductService {
     @Autowired

@@ -20,7 +20,7 @@ public class Producto {
     private String Codigobarras;
 
     @Column(name = "precio_venta")
-    private Double pecioVenta;
+    private Double precioVenta;
 
     @Column(name = "cantidad_stock")
     private Integer cantidadStock;
@@ -49,6 +49,7 @@ public class Producto {
         return nombre;
     }
 
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -69,12 +70,12 @@ public class Producto {
         Codigobarras = codigobarras;
     }
 
-    public Double getPecioVenta() {
-        return pecioVenta;
+    public Double getPrecioVenta() {
+        return precioVenta;
     }
 
-    public void setPecioVenta(Double pecioVenta) {
-        this.pecioVenta = pecioVenta;
+    public void setPrecioVenta(Double pecioVenta) {
+        this.precioVenta = pecioVenta;
     }
 
     public Integer getCantidadStock() {
@@ -91,6 +92,14 @@ public class Producto {
 
     public void setEstado(Boolean estado) {
         this.estado = estado;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
     }
 
 }
